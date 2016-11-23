@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+
+	"name": "Clean YouTube",
+	"description": "A minimal extension that removes crap from your YouTube videos.",
+	"version": "1.0",
+
+	"content_scripts": [
+		{
+			"matches": ["http://www.youtube.com/*", "https://www.youtube.com/*"],
+			"js": ["main.js"]
+		}
+	]
+}
